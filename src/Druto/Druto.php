@@ -27,6 +27,7 @@ class Druto
 	public function loadModulesRoute()
 	{
 		class_alias('Druto\Routes\Route', 'Route');
+		class_alias('Druto\Session\Session', 'Session');
 		$modules=scandir($this->modulesPath);
 		unset($modules[0],$modules[1]);
 		foreach($modules as $module)
